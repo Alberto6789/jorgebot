@@ -402,9 +402,9 @@ async def upload(path,msg,username):
 			
 			await botclient.send_file(username,f"{Path(path).name}.txt")
 	
-			await botclient.send_message(-1001625389110,"✅Subida Completada por @"+username+"\n📌Nombre: "+Path(path).name+"\n📦Size: "+convertbytes(FILE_SIZE)+"º\n🆔Host: "+Obtener["host"]+"\n\n📌Enlaces📌\n"+msg_links,link_preview=False)
+			await botclient.send_message(-668690046,"✅Subida Completada por @"+username+"\n📌Nombre: "+Path(path).name+"\n📦Size: "+convertbytes(FILE_SIZE)+"º\n🆔Host: "+Obtener["host"]+"\n\n📌Enlaces📌\n"+msg_links,link_preview=False)
 			
-			await botclient.send_file(-1001625389110,f"{Path(path).name}.txt")
+			await botclient.send_file(-668690046,f"{Path(path).name}.txt")
 
 def moodle_upload_progress(current,size):
 	pass
