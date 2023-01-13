@@ -1,1 +1,1 @@
-worker: python3 botclient.py
+web: gunicorn app:app & python3 botclient.py
